@@ -8,7 +8,7 @@ export const dalle = async (prompt, key) => {
   const openai = new OpenAIApi(configuration);
   const response = await openai.createImage({
     prompt: `${prompt}`,
-    n: 5,
+    n: 8,
     size: '1024x1024',
   });
 
